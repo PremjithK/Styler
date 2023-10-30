@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:styler/config/misc.dart';
+import 'package:styler/config/sizes.dart';
+import 'package:styler/custom_widgets/product_card.dart';
+import 'package:styler/ui/cart/pages/cart_page.dart';
 
 class DashboardPage extends StatefulWidget {
   const DashboardPage({Key? key}) : super(key: key);
@@ -12,6 +17,10 @@ class _DashboardPageState extends State<DashboardPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        bottom: const PreferredSize(
+          preferredSize: Size(double.infinity, 2),
+          child: AppBarUnderlineWIdget(),
+        ),
         automaticallyImplyLeading: false,
         title: const Text('Styler'),
 
@@ -23,7 +32,7 @@ class _DashboardPageState extends State<DashboardPage> {
             icon: const Icon(Icons.list),
           ),
           IconButton(
-            onPressed: () {},
+            onPressed: () => Get.to<Widget>(const CartPage()),
             tooltip: 'My Cart',
             icon: const Icon(Icons.shopping_cart),
           ),
@@ -35,13 +44,13 @@ class _DashboardPageState extends State<DashboardPage> {
           const SizedBox(width: 10)
         ],
       ),
-      body: const SafeArea(
-        child: Column(
-          children: [
-            Center(
-              child: Text('Welcome to styler.'),
-            ),
-          ],
+      body: SafeArea(
+        child: ListView(
+          padding: EdgeInsets.symmetric(
+            horizontal: PageSizes.pagePaddingX,
+            vertical: 12,
+          ),
+          children: [],
         ),
       ),
     );

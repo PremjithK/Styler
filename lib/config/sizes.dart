@@ -14,9 +14,9 @@ class TextSizes {
   static double get h6 => 20;
 
   // Body Text
-  static double get b1 => 14;
-  static double get b2 => 12;
-  static double get b3 => 10;
+  static double get b1 => 16;
+  static double get b2 => 14;
+  static double get b3 => 12;
 }
 
 class PageSizes {
@@ -24,7 +24,7 @@ class PageSizes {
 }
 
 class ProductCardStyles {
-  static double get borderRadius => 12;
+  static double get borderRadius => 6;
   static EdgeInsetsGeometry get padding => const EdgeInsets.all(12);
 
   // Card border radius

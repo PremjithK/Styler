@@ -1,5 +1,5 @@
 name: styler
-description: A new Flutter project.
+description: A Fashion Brand's Ecommerce App In Flutter.
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
@@ -15,6 +15,7 @@ dependencies:
   flutter:
     sdk: flutter
 
+  get:
   bloc:
   flutter_bloc:
   dio:
@@ -38,16 +39,34 @@ flutter:
     - assets/images/
 
   #^ CUSTOM FONTS
-  # fonts:
+  fonts:
   # SERIF FONT >>
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  # SANS FONT
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+    - family: Kaisei
+      fonts:
+        - asset: assets/fonts/KaiseiTokumin-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/KaiseiTokumin-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/KaiseiTokumin-Bold.ttf
+          weight: 600
+        - asset: assets/fonts/KaiseiTokumin-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/KaiseiTokumin-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/KaiseiTokumin-ExtraBold.ttf
+          weight: 900
+  # SANS FONT >>
+    - family: Overpass
+      fonts:
+        - asset: assets/fonts/Overpass-Light.ttf
+          weight: 300
+        - asset: assets/fonts/Overpass-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Overpass-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Overpass-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Overpass-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/Overpass-ExtraBold.ttf
+          weight: 800
