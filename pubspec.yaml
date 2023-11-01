@@ -20,8 +20,10 @@ dependencies:
   flutter_bloc:
   dio:
   intl:
+  flutter_animate:
 
   cupertino_icons: ^1.0.2
+  meta: ^1.9.1
 
 dev_dependencies:
   flutter_test:
